@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<style>
+		body{
+			background: #7474BF;
+			background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+			background: linear-gradient(to right, #348AC7, #7474BF);
+		}
+		.all{
+			background: #ECE9E6; 
+			background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+			background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+			margin-top: 10px;
+		}
+		header{
+			padding: 10px;
+			background: #272727;
+			color: white;
+		}
+		.header{
+			background: #07f800;
+			padding:5px;
+		}
+		.text{
+			background: #56fd00;
+			padding: 5px;
+			text-align: center
+		}
+		textarea{
+			width: 50%;
+			height: 200px;
+			resize: none;
+		}
+		input{
+			width: 50%;
+		}
+		form{
+			padding: 5px;
+			font-size: 20px;
+		}
+		#send{
+			background: #bcbcbc;
+			border: none;
+		}
+		#send:active{
+			background: #eee;
+		}
+		#send:hover{
+			opacity: 0.9;
+		}
+	</style>
+</head>
+<body>
+	<header class="container-fluid">
+			<h1>Мій сайт візитка</h1>
+		</header>
+	<div class="all container">
+
+		<div class="container">
+			<h2>Про мене</h2>
+
+			<p>
+				Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Debitis voluptatum suscipit ipsa saepe a tempore provident molestiae qui excepturi ipsam nam totam voluptatem, explicabo soluta doloremque, animi laboriosam facilis consectetur.
+			</p>
+
+			<h2>Що я можу?</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="header">
+						<h3 class="text-center">Назва вміння</h3>
+					</div>
+					<div class="text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolore itaque similique, qui sequi distinctio aliquam eveniet non vel ab placeat suscipit optio quae sint inventore ullam minus, natus, maxime? Nulla?
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="header">
+						<h3 class="text-center">Назва вміння</h3>
+					</div>
+					<div class="text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolore itaque similique, qui sequi distinctio aliquam eveniet non vel ab placeat suscipit optio quae sint inventore ullam minus, natus, maxime? Nulla?
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="header">
+						<h3 class="text-center">Назва вміння</h3>
+					</div>
+					<div class="text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolore itaque similique, qui sequi distinctio aliquam eveniet non vel ab placeat suscipit optio quae sint inventore ullam minus, natus, maxime? Nulla?
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-center">Напишіть мені</h2>
+
+			<center>
+				<form action="" class="container">
+					<label>Ваша почта:</label><br>
+					<input type="text" name = "mail" placeholder="Введіть вашу почту">
+					<br>
+
+					<label>Ваше повідомлення:</label><br>
+					<textarea name="mess" placeholder="Введіть вашу почту"></textarea>
+
+					<input type="submit" value = "Надіслати" id = "send">
+
+				</form>
+			</center>
+
+		</div>
+
+	</div>
+
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script></script>
+</body>
+</html>

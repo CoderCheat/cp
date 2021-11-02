@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <style>
+    body{
+      background: #b3feb5;
+    }
+    .title{
+      background: linear-gradient(to right, purple, red);
+      height: 250px;
+    }
+    .b{
+      font-size: 40px;
+      color: white;
+      padding-top: 100px;
+    }
+    .ImgB{
+      cursor: pointer;
+    }
+    .ImgB:hover{
+      transition: all 0.8s ease 0s;
+      transform: translate(20px,20px);
+    }
+    .alert{
+      background: #313233;
+      color: white;
+      font-size: 15px;
+      margin-top: 30px;
+
+    }
+    #t{
+      margin-top: 10px;
+    }
+    .t{
+      font-size: 15px;
+    }
+    #destroy{
+      background: red;
+      border: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="all">
+    <div class="title container-fluid">
+      <div class="b">
+        <center>
+          Name of shop
+        </center>
+      </div>
+    </div>
+    <div class="content container">
+      <center id = "t">
+        <!--
+          You can add new Goods, use tag img. in the src set url to your Goods;
+          for add a new goods set id more than past t5, t6, t7, t8...;
+        -->
+        <a href = "#t1"><img id = "t1" class = "ImgB" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUk9BSFedHs1rBR8cJ4b_GKwprYnwOacjnSzQdJCywfHK_dCV391e5qGP1kFDPXsKo-Uk&usqp=CAU" alt=""></a>
+        <a href = "#t2"><img id = "t2" class = "ImgB" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUk9BSFedHs1rBR8cJ4b_GKwprYnwOacjnSzQdJCywfHK_dCV391e5qGP1kFDPXsKo-Uk&usqp=CAU" alt=""></a>
+        <a href = "#t3"><img id = "t3" class = "ImgB" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUk9BSFedHs1rBR8cJ4b_GKwprYnwOacjnSzQdJCywfHK_dCV391e5qGP1kFDPXsKo-Uk&usqp=CAU" alt=""></a>
+        <a href = "#t4"><img id = "t4" class = "ImgB" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUk9BSFedHs1rBR8cJ4b_GKwprYnwOacjnSzQdJCywfHK_dCV391e5qGP1kFDPXsKo-Uk&usqp=CAU" alt=""></a>
+      </center>
+    </div>
+  </div>
+    <div class="alert container" style="">
+        <button id = "destroy"></button><hr>
+        <div class="t"></div>
+        <div>
+          <div class = "row">
+            <div class= "col-md-6">
+              <img style = "" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUk9BSFedHs1rBR8cJ4b_GKwprYnwOacjnSzQdJCywfHK_dCV391e5qGP1kFDPXsKo-Uk&amp;usqp=CAU">
+            </div>
+            <div class= "col-md-6 text">
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+  <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $("#destroy").click(function(){
+      $(".alert").fadeOut(250);
+      $("#destroy").css("background", "green");
+      setTimeout(function(){
+        $("#destroy").css("background", "red");
+        $("#all").show()
+      }, 250)
+    })
+    $(".alert").fadeOut(0);
+    $("#t1").click(function(){
+      $("#all").hide()
+      $(".alert").fadeIn(250);
+      document.querySelector(".t").innerHTML = "Your text about goods1";
+      document.querySelector(".text").innerHTML = "text about goods1";
+    });
+    $("#t2").click(function(){
+      $("#all").hide()
+      $(".alert").fadeIn(250);
+      document.querySelector(".t").innerHTML = "Your text about goods2";
+      document.querySelector(".text").innerHTML = "text about goods2";
+    });
+    $("#t3").click(function(){
+      $("#all").hide()
+      $(".alert").fadeIn(250);
+      document.querySelector(".t").innerHTML = "Your text about goods3";
+      document.querySelector(".text").innerHTML = "text about goods3";
+    });
+    $("#t4").click(function(){
+      $("#all").hide()
+      $(".alert").fadeIn(250);
+      document.querySelector(".t").innerHTML = "Your text about goods4";
+      document.querySelector(".text").innerHTML = "text about goods4";
+    });
+  </script>
+</body>
+</html>

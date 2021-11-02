@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta name="description" content="Шпрагалка програміста: статті, софт, книги">
+    <meta name = "keywords" content = "Шпаргалка програміста, It книжки">
+    <link rel="shortcut icon" href="icons/logo.png" type="image/png">
+    <title class="titleWeb">Шпаргалка прогаміста</title>
+  </head>
+  <body>
+    <div class="b"></div>
+
+    <div class="container-fluid titleL">
+        <a name="up" style="color: white; text-decoration: none;"><h1 style = "float: left;">Шпаргалка програмістa</h1>
+          <div class="download" style = "float: right">
+            <img src="icons/active_not.png" id = "d" class = "download-button">
+          </div>
+        </a><br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <center><a href="about.html" class="content" onclick="on()">Про нас</a></center>
+            </div>
+            <div class="col-md-6">
+                <center><a href="props.html" class="content" onclick="on()">Пропозиції</a></center>
+            </div>   
+        </div>
+    </div><br>
+    <div class="all">
+
+        <div class="contentBar container">
+            <div class="row">
+                <div class="col-md-3 userTime">
+                    <center><a class = "time content"></a></center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <a href="#one" class="content" onclick="on()">IT статті</a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <a href="#two" class="content" onclick="tw()">Книжки</a>
+                    </center>
+                </div>
+                  <div class="col-md-3">
+                    <center>
+                        <a href="#three" class="content" onclick="th()">Софт</a>
+                    </center>
+                  </div>
+            </div>
+        </div>
+
+    <div class="container contentSite" id="STS">
+    	<a name="one" id = "q1"><h2>
+            <button class="end" onclick="destroy_s()" id = "end1">x</button>
+            IT статті
+    </h2></a>
+    	<p>
+    		<div class="row">
+    			<div class = "col-md-4 States">
+    				<a name="two"><h3>Різниця редактора кода від IDE</h3></a>
+    				<p>
+    					У чому різниця редкатора коду від IDE? Взнаєте у цій статті ...<br>
+    					<a href="s1.html">Читати статтю</a>
+    				</p>
+    			</div>
+                <div class="col-md-4 States">
+                    <h3>Базові шаблони для сайтів</h3>
+                    <p>
+                        Якщо у вас є блог, або вам потрібно по скорому зробити сайт то ви можете використати наші бесплатні hrml шаблони<br>
+                        <a href="s2.html">Читати статтю</a>
+                    </p>
+                </div>
+                <div class="col-md-4 States">
+                    <h3>Написання сайтів на швидкість</h3>
+                    <p>
+                        У цій статті я попробую написати сайт візитку на швидкість<br>
+                        <a href="s3.html">Читати статтю</a>
+                    </p>
+                </div>
+    		</div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                
+            </div>
+    	</p>
+    </div>
+
+    <div class="container contentSite" id = "BOOK">
+        <a name="two" id = "q2"><h2>
+            <button class="end" onclick="destroy_b()" id = "end2">x</button>
+        Книжки
+        </h2></a>
+        <div class="row">
+             <div class="col-md-4">
+                 <h3>Книжка python від 0 до 1</h3>
+                 <p>
+                     Наш сайт підготував свою міні книжку-посібник по мові програмування python де ви получите базові знання мови та навчитеся робити прості програми <br>
+                     <a href="Files/pb.pptx">Завантажити книжку</a>
+                 </p>
+             </div>
+             <div class="col-md-4">
+                <h3>Книжка javascript від 0 до 1</h3>
+                <p>
+                     У цій книжці ви вивчите основи розробки простих сайтів на html, також ви вивчете все основне що вам знадобиться при програмування на мові javacript <br>
+                     <a href="Files/jsB.pptx">Завантажити книжку</a>
+                 </p>
+             </div>
+             <div class="col-md-4">
+                <h3>Книжка с# від 0 до 1</h3>
+                <p>
+                    Бажаєте робити сильні і якісні програми для пк? Ну ця книжка для вас <br>
+                    <a href = "Files/csharpbook.pptx" download>Завантажити книжку</a>
+                </p>
+             </div>
+        </div>
+        <a name="two"></a>
+    </div><br>
+    <div class="container contentSite" id="APP">
+        <a name = "three" id="q3"><h2>
+            <button class="end" onclick="destroy_a()" id="end3">x</button>
+        Софт</h2></a>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Mouse Info</h3>
+                <p>
+                    Цікавить данні про вашу мишу? Якщо так то для того вам ідеально підійде наша програма Mouse.Info написана на мові програмування python <br>
+                    <a href="Programs/Mouse.Info.exe" download>Завантажити програму</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Wiki Search</h3>
+                <p>
+                    Проста програма що берез вас інформацію і далі бере короткі данні з wikipedia і виводить їх вам <br>
+                    <a href="Programs/WikiSearch.exe" download>Завантажити програму</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Sourse.Code</h3>
+                <p>
+                    Графічна програма яка дозволить вам взяти HTML код з любої сторінки <br>
+                    <a href="Programs/Sourse.Code.exe" download>Завантажити програму</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Гра Moon</h3>
+                <p>
+                    Наша гра під мобільні телефони, де ви повинні ловити обломки з місяця <br>
+                    <a href="Programs/Moon.apk" download>Завантажити андроїд</a>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid titleOriginal">
+        <a name="up" style="color: white; text-decoration: none;"><h1 style = "float: left;">Шпаргалка програмістa</h1>
+          <div class="download" style = "float: right">
+            <img src="icons/active_not.png" id = "d" class = "download-button">
+          </div>
+        </a><br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <center><a href="about.html" class="content" onclick="on()">Про нас</a></center>
+            </div>
+            <div class="col-md-6">
+                <center><a href="props.html" class="content" onclick="on()">Пропозиції</a></center>
+            </div>   
+        </div>
+    </div><br>
+
+
+  <div class="alert container" style = "color: white;">
+    <div class="title">
+      <h2 class = "text-left">Завантажити програму <button class="end" id="endA">x</button></h2>
+    </div>
+    <div class="body">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class = "text-center"> <a class = "download_button" onclick="alert('Тимчасово недоступно')" href="Programs/site/CP.exe" download>Windows</a></h4>
+        </div>
+        <div class="col-md-6">
+          <h4 class = "text-center"> <a class = "download_button" href="Programs/site/cp.apk" download>Android</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <canvas id = "canvas-animations" style="display: none;"></canvas>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "JS/script.js"></script>
+    <script src="JS\SecredCode.js" charset="utf-8"></script>
+  </body>
+</html>

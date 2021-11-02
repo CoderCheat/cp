@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Візитка</title>
+	<link rel="stylesheet" href="rezz.css">
+	<style>
+		* {
+			transition: all 0.3s ease 0s;
+			margin: 0;
+			padding: 0;
+			font-family: Arial;
+			color: white;
+		}
+		body{
+			font-size: 20px;
+		}
+		.center{
+			text-align: center;
+			transform: translate(0%);
+		}
+		.win-center{
+			text-align: center;
+			transform: translate(0%);
+			position: relative;
+			top: 50% 
+		}
+		div p{
+			padding: 20px;
+		}
+		input{
+			background: #343434;
+			color: white;
+			letter-spacing: 0.5px;
+			padding: 5px;
+			border: none;
+			width: 70%;
+		}
+		textarea{
+			background: #343434;
+			color: white;
+			letter-spacing: 0.5px;
+			padding: 5px;
+			border: none;
+			width: 70%;
+			resize: none;
+		}
+		button{
+			background: #343434;
+			color: white;
+			letter-spacing: 0.5px;
+			padding: 5px;
+			border: none;
+			width: 70%;
+			cursor: pointer;
+		}
+		button:hover{
+			background: #202020;
+		}
+		button:active{
+			background: #121212;
+		}
+		body{
+			background: black
+		}
+		footer{
+			position: fixed;
+			top: 100%;
+		}
+		::-webkit-scrollbar {
+		    width: 0px; /* ширина для вертикального скролла */
+		}			
+	</style>
+</head>
+<body>
+	
+	<div class="all win-center" style="width: 100%">
+		<div class="title" style = "background-color: black">
+			<div class="title_text win-center">
+				<h1 class="animete">
+					Назва сайту
+				</h1>
+				<small>
+					Слоган сайту
+				</small><br>
+
+			</div>
+
+		</div>
+
+		<div class="about" style="background: #101010;">
+			<h2 class="win-center" name = "about-me">Про мене</h2>
+			<p class="win-center">
+				Інформація про вас
+			</p>
+
+		</div>
+		<div class="center win-center">
+			<form action="" class="center win-center" style="background: #272727;" >
+				<h2 class="center" name = "form">Задайте питання</h2>
+				<h3 class="center">Заповніть форму</h3>
+				<input type="text" placeholder="Пошта" name = "mail"><br><br>
+				<textarea name="message" id="message" rows="10" placeholder="Повідомлення"></textarea> <br><br>
+				<button type="button">Відправити</button>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		let rezz = {
+			size100: function(element){
+				setInterval(function(){
+					document.querySelector(element).style.width = 100+"%"
+					document.querySelector(element).style.height = innerHeight+"px"
+				}, 1)
+			},
+		}
+	</script>
+	<script>
+		rezz.size100(".title")
+		rezz.size100(".about")
+		rezz.size100("form")
+	</script>
+</body>
+</html>
